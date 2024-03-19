@@ -164,7 +164,7 @@ brickBuilder.create("wallet", "containerWallet", {
     },
 });
 
-brickBuilder.create("brand", "containerBrand", {});
+brickBuilder.create("brand", "containerBrand");
 
 brickBuilder.create("brand", "containerBrand", {
     customization: {
