@@ -164,7 +164,17 @@ brickBuilder.create("wallet", "containerWallet", {
     },
 });
 
-brickBuilder.create("brand", "containerBrand");
+brickBuilder.create("brand", "containerBrand", {});
+
+brickBuilder.create("brand", "containerBrand", {
+    customization: {
+        paymentMethods: {
+            excludedPaymentMethods: ['amex'],
+            excludedPaymentTypes: ['ticket']
+        },
+    }
+});
+
 
 const fieldInstance = mpInstance.fields.create("cardNumber", {});
 fieldInstance.mount("containerId");
