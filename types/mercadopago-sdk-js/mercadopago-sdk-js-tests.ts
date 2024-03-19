@@ -26,8 +26,9 @@ brickBuilder.isInitialized();
         },
         callbacks: {
             onSubmit: (formData, additionalData) => {
-                return new Promise(() => {
+                return new Promise((resolve) => {
                     console.log(formData, additionalData);
+                    resolve();
                 });
             },
         },
